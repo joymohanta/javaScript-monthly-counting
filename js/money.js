@@ -5,6 +5,7 @@ function calculation() {
   const balanceNumber = parseFloat(balance.innerText);
   const totalBalance = payment;
   balance.innerText = totalBalance - calculationExpense();
+  return balance.innerText;
 }
 
 document.getElementById("calculate-btn").addEventListener("click", function () {
@@ -58,4 +59,9 @@ document.getElementById("save-btn").addEventListener("click", function () {
   const savetotal = document.getElementById("total-save");
   const total = parseFloat(savetotal.innerText);
   savetotal.innerText = countPercent;
+  //Remaining Balance
+  const remainingBalance = document.getElementById("rest-balance");
+  const remain = parseFloat(remainingBalance.innerText);
+  const net = calculation() - savetotal.innerText;
+  remainingBalance.innerText = net;
 });
