@@ -22,18 +22,18 @@
         <!-- calculation portion -->
         <section class="color text-center w-100 ms-5 p-4">
             <h4 class="">Income</h4>
-            <pre class="fs-5 font-style">Income:  <input class="pl-1" type="text"></pre> 
+            <pre class="fs-5 font-style">Income:  <input id="payment" class="pl-1" type="text"></pre> 
             <h4 class="">Expenses</h4>
-            <pre class="fs-5 font-style">Food:    <input class="pl-1" type="text"></pre> 
-            <pre class="fs-5 font-style">Rent:    <input class="pl-1" type="text"></pre>
-            <pre class="fs-5 font-style">Clothes: <input class="pl-1" type="text"></pre><br>
-            <button class="btn btn-primary w-50 fs-5">Calculate</button>
+            <pre class="fs-5 font-style">Food:    <input id="food" class="pl-1" type="text"></pre> 
+            <pre class="fs-5 font-style">Rent:    <input id="rent" class="pl-1" type="text"></pre>
+            <pre class="fs-5 font-style">Clothes: <input id="cloth" class="pl-1" type="text"></pre><br>
+            <button id="calculate-btn" class="btn btn-primary w-50 fs-5">Calculate</button>
             <br><br>
-            <h5>Total Expenses: 00</h5>
-            <h5>Balance: 00</h5>
-            <pre class="fs-5 font-style"> Save: <input class="pl-1 w-25" type="text"> %  <button class="btn btn-primary fs-5">Save</button></pre>
-            <h5>Saving Account: 00</h5>
-            <h5>Remaining Balance: 00</h5>
+            <h5>Total Expenses: <span id="expense">00</span></h5>
+            <h5>Balance: <span id="balance">00</span></h5>
+            <pre class="fs-5 font-style"> Save: <input id="percent-input" class="pl-1 w-25" type="text"> %  <button id="save-btn" class="btn btn-primary fs-5">Save</button></pre>
+            <h5>Saving Account: <span id="total-save">00</span></h5>
+            <h5>Remaining Balance: <span id="rest-balance">00</span></h5>
         </section>
     </main>
 
