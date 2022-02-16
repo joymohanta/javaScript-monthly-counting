@@ -62,6 +62,6 @@ document.getElementById("save-btn").addEventListener("click", function () {
   //Remaining Balance
   const remainingBalance = document.getElementById("rest-balance");
   const remain = parseFloat(remainingBalance.innerText);
-  const net = calculation() - savetotal.innerText;
-  remainingBalance.innerText = net;
+  const netbalance = calculation() - savetotal.innerText;
+  remainingBalance.innerText = netbalance;
 });
