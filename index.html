@@ -14,32 +14,32 @@
         <h2 class="text-center fw-bold pb-3">Money <span class="text-warning">Distributor</span></h2>
     </header>
     <!-- Main portion -->
-    <main class="container d-lg-flex justify-content-between d-sm-flex align-items-sm-center w-100">
+    <main class="container d-lg-flex justify-content-between w-100">
         <section class="w-75">
             <img class="" src="image/pic1.jpg" alt="">
         </section>
         
         <!-- calculation portion -->
-        <section class="color text-center w-100 ms-5 p-4">
+        <section class="color text-center w-100 ms-2 p-3">
             <h4 class="">Income</h4>
-            <pre class="fs-5 font-style">Income:  <input id="payment" class="pl-1" type="text"></pre> 
+            <pre class="fs-5 font-style">Income:  <input id="payment" class="pl-1" type="text" placeholder="Enter an amount"></pre> 
             <h4 class="">Expenses</h4>
-            <pre class="fs-5 font-style">Food:    <input id="food" class="pl-1" type="text"></pre> 
-            <pre class="fs-5 font-style">Rent:    <input id="rent" class="pl-1" type="text"></pre>
-            <pre class="fs-5 font-style">Clothes: <input id="cloth" class="pl-1" type="text"></pre><br>
+            <pre class="fs-5 font-style">Food:      <input id="food" class="pl-1" type="text" placeholder="Your food cost"></pre> 
+            <pre class="fs-5 font-style">Rent:       <input id="rent" class="pl-1" type="text" placeholder="Your rent cost"></pre>
+            <pre class="fs-5 font-style">Clothes:  <input id="cloth" class="pl-1" type="text" placeholder="Your cloth cost"></pre><br>
             <button id="calculate-btn" class="btn btn-primary w-50 fs-5">Calculate</button>
             <br><br>
             <h5>Total Expenses: <span id="expense">00</span></h5>
             <h5>Balance: <span id="balance">00</span></h5>
-            <pre class="fs-5 font-style"> Save: <input id="percent-input" class="pl-1 w-25" type="text"> %  <button id="save-btn" class="btn btn-primary fs-5">Save</button></pre>
+            <pre class="fs-5 font-style"> Save: <input id="percent-input" class="pl-1 w-25" type="text" placeholder="Percent"> %  <button id="save-btn" class="btn btn-primary fs-5">Save</button></pre>
             <h5>Saving Account: <span id="total-save">00</span></h5>
             <h5>Remaining Balance: <span id="rest-balance">00</span></h5>
         </section>
     </main>
     <!-- Footer -->
-    <footer class="bg-secondary py-2 text-center">
-        <h4>Approval checking: Activated</h4>
-        <p class="text-warning">Opps! Please enter a positive number</p>
+    <footer class="bg-secondary py-4 text-center">
+        <h5 id="error" class="text-warning error">Opps! Please enter a positive number<h5>
+        <h4>Approval checking: <span class="text-light">Activated</span></h4>
     </footer>
 
 

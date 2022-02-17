@@ -1,6 +1,12 @@
+/* Calculation Background color */
 .color {
   background-color: #adb5bd;
 }
+/* Pre tag font style */
 .font-style {
   font-family: sans-serif;
+}
+/* Error Handle */
+.error {
+  display: none;
 }
